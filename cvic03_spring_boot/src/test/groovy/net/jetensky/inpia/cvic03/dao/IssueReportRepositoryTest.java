@@ -1,6 +1,5 @@
 package net.jetensky.inpia.cvic03.dao;
 
-import net.jetensky.inpia.cvic03.Creator;
 import net.jetensky.inpia.cvic03.IssueReportDataFactory;
 import org.junit.Assert;
 import org.junit.Test;

@@ -1,6 +1,6 @@
-package net.jetensky.inpia.cvic03.dao;
+package net.jetensky.inpia.cvic03.dao
 
-import net.jetensky.inpia.cvic03.Creator
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,8 +11,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 import javax.transaction.Transactional
 
 import static junit.framework.TestCase.assertEquals
-import static net.jetensky.inpia.cvic03.Creator.save
-import static net.jetensky.inpia.cvic03.Creator.save1;
+import static Creator.save
+import static Creator.save1;
 
 @RunWith(SpringRunner.class)
 @DataJpaTest

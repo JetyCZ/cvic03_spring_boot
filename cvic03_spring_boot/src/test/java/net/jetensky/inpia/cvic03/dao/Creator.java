@@ -1,4 +1,4 @@
-package net.jetensky.inpia.cvic03;
+package net.jetensky.inpia.cvic03.dao;
 
 import org.apache.commons.beanutils.PropertyUtils;
 import org.apache.commons.lang3.reflect.FieldUtils;
@@ -47,6 +47,9 @@ public class Creator {
     }
 
     public Object saveEntity(Object entity) {
+        return saveEntity(entity, false);
+    }
+    public Object saveEntity(Object entity, boolean deleteOthers) {
         try {
             Map props = PropertyUtils.describe(entity);
             List<Field> allFields = FieldUtils.getAllFieldsList(entity.getClass());
@@ -76,7 +79,11 @@ public class Creator {
                 saveChildEntity(propValue);
             }
 
-            getDao(entity).save(entity);
+            JpaRepository dao = getDao(entity);
+            if (deleteOthers) {
+                dao.deleteAllInBatch();
+            }
+            dao.save(entity);
         } catch (Exception e) {
             throw new IllegalStateException("Problem", e);
         }

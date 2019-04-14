@@ -38,4 +38,13 @@ dependencies {
     testCompile 'io.github.bonigarcia:webdrivermanager:3.4.0'
 
     testCompile 'junit:junit:4.12'
+
+    // integrationTest
+    integrationTestImplementation 'commons-beanutils:commons-beanutils:1.8.3'
+    integrationTestImplementation 'org.springframework.boot:spring-boot-starter-test'
+    integrationTestImplementation "org.codehaus.groovy:groovy-all:2.4.15"
+
+    integrationTestImplementation 'org.springframework.boot:spring-boot-starter-aop'
+    integrationTestImplementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    integrationTestImplementation 'org.springframework.boot:spring-boot-starter-web'
 }

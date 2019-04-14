@@ -1,6 +1,6 @@
 sourceSets {
     integrationTest {
-        compileClasspath += sourceSets.main.output + configurations.testCompile
+        compileClasspath += sourceSets.main.output +  sourceSets.test.output + configurations.testCompile
         runtimeClasspath += output + compileClasspath + configurations.testRuntime
     }
 }
@@ -9,7 +9,7 @@ task integrationTest(type: Test) {
     description = 'Runs the integration tests.'
     group = 'verification'
     testClassesDirs = sourceSets.integrationTest.output.classesDirs
-    classpath = sourceSets.integrationTest.runtimeClasspath
+    classpath = sourceSets.integrationTest.runtimeClasspath + sourceSets.test.runtimeClasspath
     outputs.upToDateWhen { false }
     mustRunAfter test
 }

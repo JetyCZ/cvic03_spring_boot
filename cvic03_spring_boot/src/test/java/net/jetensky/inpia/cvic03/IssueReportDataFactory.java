@@ -1,16 +1,14 @@
 package net.jetensky.inpia.cvic03;
 
-import net.jetensky.inpia.cvic03.dao.IssueReport;
-import net.jetensky.inpia.cvic03.dao.IssueReportRepository;
-import net.jetensky.inpia.cvic03.dao.User;
-import net.jetensky.inpia.cvic03.dao.UserRepository;
+import net.jetensky.inpia.cvic03.dao.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 @Repository
 public class IssueReportDataFactory {
 
-    @Autowired Creator creator;
+    @Autowired
+    Creator creator;
 
     @Autowired
     private IssueReportRepository issueReportRepository;
