@@ -2,7 +2,7 @@ import net.jetensky.inpia.cvic03.testutil.AbstractUITest;
 import org.junit.Test;
 import org.openqa.selenium.By;
 
-public class SmokeTest extends AbstractUITest {
+public class HelloWorldUITest extends AbstractUITest {
 
     @Test()
     public void googleHello() {
