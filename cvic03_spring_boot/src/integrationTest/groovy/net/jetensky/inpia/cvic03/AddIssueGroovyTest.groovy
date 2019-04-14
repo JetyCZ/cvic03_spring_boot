@@ -49,6 +49,7 @@ public class AddIssueGroovyTest extends AbstractUITest {
                         "']]" +
                         "]")).size() > 0
         )
+
     }
 
 

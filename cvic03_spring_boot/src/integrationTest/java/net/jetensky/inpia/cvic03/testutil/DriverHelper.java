@@ -26,8 +26,8 @@ public class DriverHelper {
         return driver.findElements(By.xpath("//ul[@class='side-nav']")).get(0);
     }
 
-    public void assertTitle(String přihlášení) {
-        Assert.assertEquals(driver.getTitle(), přihlášení);
+    public void assertTitle(String title) {
+        Assert.assertEquals(driver.getTitle(), title);
     }
 
     public static WebDriver getWebDriver() {
