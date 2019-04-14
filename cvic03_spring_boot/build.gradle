@@ -18,30 +18,22 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-aop'
-    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
-    implementation 'org.springframework.boot:spring-boot-starter-web'
+    compile 'org.springframework.boot:spring-boot-starter-aop'
+    compile 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    compile 'org.springframework.boot:spring-boot-starter-web'
     compile 'org.springframework.boot:spring-boot-starter-data-jpa'
     runtime('com.h2database:h2')
     
     runtimeOnly 'org.springframework.boot:spring-boot-devtools'
-    
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    testImplementation 'commons-beanutils:commons-beanutils:1.8.3'
-    testImplementation 'org.apache.commons:commons-lang3:3.3.2'
-    testImplementation "org.codehaus.groovy:groovy-all:2.4.15"
+
+    testCompile 'org.springframework.boot:spring-boot-starter-test'
+    testCompile 'commons-beanutils:commons-beanutils:1.8.3'
+    testCompile 'org.apache.commons:commons-lang3:3.3.2'
+    testCompile "org.codehaus.groovy:groovy-all:2.4.15"
 
     testCompile 'org.seleniumhq.selenium:selenium-java:3.0.1'
     testCompile 'io.github.bonigarcia:webdrivermanager:3.4.0'
 
     testCompile 'junit:junit:4.12'
 
-    // integrationTest
-    integrationTestImplementation 'commons-beanutils:commons-beanutils:1.8.3'
-    integrationTestImplementation 'org.springframework.boot:spring-boot-starter-test'
-    integrationTestImplementation "org.codehaus.groovy:groovy-all:2.4.15"
-
-    integrationTestImplementation 'org.springframework.boot:spring-boot-starter-aop'
-    integrationTestImplementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
-    integrationTestImplementation 'org.springframework.boot:spring-boot-starter-web'
 }
