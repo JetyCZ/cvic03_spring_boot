@@ -54,13 +54,10 @@ public class AddIssueGroovyTest extends AbstractUITest {
 
     @Test
     void testIssueList() {
-        def testUrl = "http://upce.cz"
-        def testDesc = "test desc"
-        IssueReport issueReport = new IssueReport(url: testUrl, description: testDesc)
-        (IssueReport) creator.saveEntity(
-                issueReport, true
+        IssueReport issueReport = (IssueReport) creator.saveEntity(
+                new IssueReport(), true
         )
         driver.get("http://localhost:8080/issues")
-        assertExistingIssue(testDesc, testUrl)
+        assertExistingIssue(issueReport.description, issueReport.url)
     }
 }

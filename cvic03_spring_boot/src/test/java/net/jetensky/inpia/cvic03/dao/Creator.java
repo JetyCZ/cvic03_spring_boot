@@ -14,6 +14,7 @@ import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotEmpty;
 import java.lang.reflect.Field;
+import java.sql.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -59,11 +60,16 @@ public class Creator {
                     Object propValue = FieldUtils.readField(field, entity);
                     final boolean notEmptyField = fieldHasAnnotation(field, NotEmpty.class);
                     boolean manyToOne = fieldHasAnnotation(field, ManyToOne.class);;
-                    if ((propValue ==null) && (notEmptyField || manyToOne)) {
-                        if (field.getType().isAssignableFrom(String.class)) {
+                    if (propValue ==null) {
+                        Class<?> fieldClass = field.getType();
+                        if (fieldClass.isAssignableFrom(String.class)) {
                                 propValue = "Test " + field.getName();
                         } else {
-                            propValue = field.getType().newInstance();
+                            if (Date.class.equals(fieldClass)) {
+                                propValue = new Date(System.currentTimeMillis());
+                            } else {
+                                propValue = fieldClass.newInstance();
+                            }
                         }
                         PropertyUtils.setProperty(entity, field.getName(), propValue);
 
