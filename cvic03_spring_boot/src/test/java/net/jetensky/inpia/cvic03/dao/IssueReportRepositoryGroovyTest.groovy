@@ -44,15 +44,5 @@ public class IssueReportRepositoryGroovyTest {
 
     }
 
-    @Test
-    public void testValidateIssueReportInvalidUrl() {
-
-        creator.saveEntity(new IssueReport(url: "httpbla"));
-
-        assertEquals(issueReportRepository.findAllByEmail("e1").size(), 2);
-        assertEquals(issueReportRepository.findAllByEmail("e2").size(), 1);
-
-    }
-
 
 }
