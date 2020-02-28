@@ -13,7 +13,7 @@ public class ApplicationTest {
     public void processMessages() {
         MockEmailService emailServiceMock = new MockEmailService();
         Application app = new DependencyInjector(emailServiceMock).getApplication();
-        app.process("pavel.jetensky@seznam.cz");
+        app.process();
         assertEquals(2, emailServiceMock.sentCount);
     }
     private class MockEmailService extends EmailService {
