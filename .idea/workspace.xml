@@ -2,38 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1e3ac4e-b82a-4841-b809-84d9d9899512" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/cvic02_spring_code/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cvic02_spring_code/src/main/java/net/jetensky/inpia/cvic03/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cvic02_spring_code/src/main/java/net/jetensky/inpia/cvic03/SmsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cvic02_spring_code/src/main/java/net/jetensky/inpia/cvic03/messagesender/EmailSender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cvic02_spring_code/src/main/java/net/jetensky/inpia/cvic03/messagesender/MessageSender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cvic03_demo/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cvic03_demo/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cvic03_demo/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cvic03_demo/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cvic03_demo/src/test/java/net/jetensky/inpia/cvic03_demo/demo/DemoApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cvic02_di/src/main/java/net/jetensky/inpia/cvic02di/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cvic02_di/src/main/java/net/jetensky/inpia/cvic02di/service/ArticleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cvic02_di/src/main/java/net/jetensky/inpia/cvic02di/service/EmailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cvic02_di/src/main/java/net/jetensky/inpia/cvic02di/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cvic02_spring_code/src/main/java/net/jetensky/inpia/cvic03_b/ApplicationSpring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cvic02_spring_code/src/main/java/net/jetensky/inpia/cvic03_b/ArticleApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cvic02_spring_code/src/main/java/net/jetensky/inpia/cvic03_b/DependencyInjector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cvic02_spring_code/src/main/java/net/jetensky/inpia/cvic03_b/service/ArticleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cvic02_spring_code/src/main/java/net/jetensky/inpia/cvic03_b/service/EmailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cvic02_spring_code/src/main/java/net/jetensky/inpia/cvic03_b/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cvic02_spring_code/src/test/java/net/jetensky/inpia/cvic03_b/ApplicationSpringTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cvic02_spring_code/src/test/java/net/jetensky/inpia/cvic03_b/ApplicationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cvic02_spring_new/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cvic02_spring_new/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cvic02_spring_new/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cvic02_spring_new/.idea/libraries/Gradle__junit_junit_4_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cvic02_spring_new/.idea/libraries/Gradle__org_springframework_spring_aop_5_1_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cvic02_spring_new/.idea/libraries/Gradle__org_springframework_spring_beans_5_1_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cvic02_spring_new/.idea/libraries/Gradle__org_springframework_spring_context_5_1_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cvic02_spring_new/.idea/libraries/Gradle__org_springframework_spring_core_5_1_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cvic02_spring_new/.idea/libraries/Gradle__org_springframework_spring_expression_5_1_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cvic02_spring_new/.idea/libraries/Gradle__org_springframework_spring_jcl_5_1_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cvic02_spring_new/.idea/libraries/Gradle__org_springframework_spring_test_5_1_5_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cvic02_spring_new/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cvic02_spring_new/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cvic02_spring_new/.idea/modules/net.jetensky.inpia.cvic02_spring_new.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cvic02_spring_new/.idea/modules/net.jetensky.inpia.cvic02_spring_new.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cvic02_spring_new/.idea/modules/net.jetensky.inpia.cvic02_spring_new.test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cvic02_spring_new/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cvic02_spring_new/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/petClinicSeleniumDemo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/petClinicSeleniumDemo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cvic02_spring_code/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/cvic02_spring_code/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cvic02_spring_code/src/main/java/net/jetensky/inpia/cvic03/messagesender/EmailSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/cvic02_spring_code/src/main/java/net/jetensky/inpia/cvic03/messagesender/EmailSender.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,23 +30,8 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>flex</find>
-      <find>card</find>
-      <find>news-l</find>
-      <find>width-wra</find>
-      <find />
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="65" />
-    <option name="y" value="24" />
-    <option name="width" value="1855" />
-    <option name="height" value="1028" />
   </component>
   <component name="ProjectId" id="1Y582xVPfKKhrA4eElTurL65Oti" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -140,6 +108,8 @@
       <workItem from="1550299492494" duration="4450000" />
       <workItem from="1550475642524" duration="1145000" />
       <workItem from="1582220893040" duration="363000" />
+      <workItem from="1582528383138" duration="74000" />
+      <workItem from="1582530424033" duration="2879000" />
     </task>
     <servers />
   </component>
@@ -159,6 +129,14 @@
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state x="720" y="276" key="VcsDiffUtil.ChangesDialog/65.24.1855.1056/1920.0.1920.1080@65.24.1855.1056" timestamp="1582220932147" />
+    <state x="637" y="275" width="793" height="526" key="find.popup" timestamp="1582542184145">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="637" y="275" width="793" height="526" key="find.popup/65.24.1855.1056/65.24.1855.1056@65.24.1855.1056" timestamp="1582542184145" />
+    <state x="655" y="236" width="672" height="678" key="search.everywhere.popup" timestamp="1582223020233">
+      <screen x="65" y="24" width="1855" height="1056" />
+    </state>
+    <state x="655" y="236" width="672" height="678" key="search.everywhere.popup/65.24.1855.1056/1920.0.1920.1080@65.24.1855.1056" timestamp="1582223020233" />
   </component>
   <component name="masterDetails">
     <states>

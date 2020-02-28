@@ -18,5 +18,7 @@ dependencies {
     compile group: 'org.springframework', name: 'spring-aop', version: '5.1.5.RELEASE'
     testCompile 'junit:junit:4.4'
     testCompile group: 'org.springframework', name: 'spring-test', version: '5.1.5.RELEASE'
+    implementation 'junit:junit:4.12'
+    implementation 'junit:junit:4.12'
 
 }
